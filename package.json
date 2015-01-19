@@ -4,7 +4,7 @@
   "description": "",
   "scripts": {
     "start": "node ./node_modules/.bin/gulp.js",
-    "test": ""
+    "test": "node ./node_modules/jasmine/bin/jasmine.js"
   },
   "dependencies": {
     "gulp": "3.8.10",
