@@ -1,0 +1,14 @@
+{
+  "name": "arena-rpg-s05e01-js",
+  "version": 0,
+  "description": "",
+  "scripts": {
+    "start": "node ./node_modules/.bin/gulp.js",
+    "test": ""
+  },
+  "dependencies": {
+    "gulp": "3.8.10",
+    "gulp-jasmine": "1.0.1",
+    "jasmine": "2.1.1"
+  }
+}
