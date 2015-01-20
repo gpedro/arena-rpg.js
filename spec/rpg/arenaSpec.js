@@ -56,7 +56,11 @@ describe("Combate arena:", function() {
   });
 
   it("Se nao estao em combate", function() {
+    var personagem1   = new Personagem('Leonidas', arma_espada, 200, 8, 8);
+    var personagem2   = new Personagem('Hulk', arma_lanca, 800, 5, 7);
+    var arena_combate = arena.emCombate(personagem1, personagem2);
 
+    expect(arena_combate).toBe(false);
   });
 
   it("Se estão fora da arena", function() {
@@ -68,7 +72,13 @@ describe("Combate arena:", function() {
   });
 
   it("Deve mover personagem", function() {
+    var personagem = new Personagem('Leonidas', arma_espada, 200, 8, 8);
+    expect(personagem.x).toEqual(8);
+    expect(personagem.y).toEqual(8);
 
+    arena.mover(personagem, 6, 7);
+    expect(personagem.x).toEqual(6);
+    expect(personagem.y).toEqual(7);
   });
 
 });
