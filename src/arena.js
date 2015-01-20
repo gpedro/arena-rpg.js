@@ -17,8 +17,9 @@ Arena.prototype.emCombate = function(p1, p2) {
 };
 
 Arena.prototype.distancia = function(p1, p2) {
-    var a = (p1.x - p2.x) * 2;
-    var b = (p1.y - p2.y) * 2;
+    var a = Math.pow((p1.x - p2.x), 2);
+    var b = Math.pow((p1.y - p2.y), 2);
+    
     return Math.sqrt(a + b);
 };
 
