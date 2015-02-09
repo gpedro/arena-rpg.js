@@ -11,12 +11,12 @@ Mestre.prototype.addPersonagem = function(personagem, coordenada) {
 };
 
 Mestre.prototype.movePersonagem = function(personagem, coordenada) {
-    var coordenada_x = coordenada.x > this.arena.width  ? this.arena.width  : coordenada.x;
-    var coordenada_y = coordenada.y > this.arena.height ? this.arena.height : coordenada.y;
-        coordenada_x = coordenada_x < 0 ? 1 : coordenada_x;
-        coordenada_y = coordenada_y < 0 ? 1 : coordenada_y;
+    var coordenadaX = coordenada.x > this.arena.width  ? this.arena.width  : coordenada.x;
+    var coordenadaY = coordenada.y > this.arena.height ? this.arena.height : coordenada.y;
+    coordenadaX = coordenadaX < 0 ? 1 : coordenadaX;
+    coordenadaY = coordenadaY < 0 ? 1 : coordenadaY;
 
-    personagem.movePara(coordenada_x, coordenada_y);
+    personagem.movePara(coordenadaX, coordenadaY);
 };
 
 module.exports = Mestre;
